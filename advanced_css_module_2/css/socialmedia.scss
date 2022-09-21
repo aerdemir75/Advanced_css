@@ -1,0 +1,91 @@
+@import './colors';
+@import './variables';
+
+head {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.fa-laptop-code::before {
+    content: "\f5fc";
+}
+.fa-twitter::before {
+    content: "\f099";
+}
+.fa-linkedin-in::before {
+    content: "\f0e1";
+}
+.fa-facebook-f::before {
+    content: "\f39e";
+}
+.fa-github::before {
+    content: "\f09b";
+}
+.fa-laptop-code {
+    background-color: $socialblog;
+    color: $text-background;
+}
+
+.fa-twitter {
+    background-color: $socialtwitter;
+    color: $text-background;
+}
+
+.fa-linkedin-in {
+    background-color: $sociallinkedin;
+    color: $text-background;
+}
+
+.fa-facebook-f {
+    background-color: $socialfacebook;
+    color: $text-background;
+}
+
+.fa-github {
+    background-color: $socialgithub;
+    color: $text-background;
+}
+
+.fa-twitter:hover {    
+    transform: scale(200px);
+    transition: 1.5s;
+    width: 100px;
+    
+    
+}
+.fa-laptop-code:hover, ::after {
+    content: "Check out my blog";
+    transform: scale(200px);
+    transition: 1.5s;
+    width: 100px;
+    
+}
+
+.fa-linkedin-in:hover{
+    content: "Connect on Linkedin";
+    transform: scale(200px);
+    transition: 1.5s;
+    width: 100px;
+    
+}
+.fa-facebook-f:hover {
+    content: "Like my Facebook page";
+    transform: scale(200px);
+    transition: 1.5s;
+    width: 100px;
+    
+}
+.fa-github:hover {
+    content: "See projects on Github";
+    transform: scale(200px);
+    transition: 1.5s;
+    width: 100px;
+    
+}
+i {
+    width: 25px;
+    height: 25px;
+}
