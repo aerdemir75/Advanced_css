@@ -1,15 +1,58 @@
 @import './colors';
 @import './variables';
 
-head {
-    background-color: $bg-color;
+body{
+    background-color: $background-color;
+}
+.socialmedia{
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: flex-end;
+}
+i{
+    width: 30px;
+    height: 25px;
+}
+.fa-laptop-code{
+    background-color: $socialblog;
+    @include padding;
+}
+.fa-twitter{
+    background-color: $socialtwitter;
+    @include padding;
+}
+.fa-linkedin-in{
+    background-color: $sociallinkedin;
+    @include padding;
+}
+.fa-facebook-f{
+    background-color: $socialfacebook;
+    @include padding;
+}
+.fa-github{
+    background-color: $socialgithub;
+    @include padding;
 }
 
 
-.fa-laptop-code::before {
+
+.fa-laptop-code:hover{
+    @include hover;
+}
+.fa-twitter:hover {
+    @include hover;
+}
+.fa-linkedin-in:hover {
+    @include hover;
+}
+.fa-facebook-f:hover {
+    @include hover;
+}
+.fa-github:hover {
+    @include hover;
+}
+
+.fa-laptop-code::before{
     content: "\f5fc";
 }
 .fa-twitter::before {
@@ -24,68 +67,19 @@ head {
 .fa-github::before {
     content: "\f09b";
 }
-.fa-laptop-code {
-    background-color: $socialblog;
-    color: $text-background;
-}
 
-.fa-twitter {
-    background-color: $socialtwitter;
-    color: $text-background;
-}
-
-.fa-linkedin-in {
-    background-color: $sociallinkedin;
-    color: $text-background;
-}
-
-.fa-facebook-f {
-    background-color: $socialfacebook;
-    color: $text-background;
-}
-
-.fa-github {
-    background-color: $socialgithub;
-    color: $text-background;
-}
-
-.fa-twitter:hover {    
-    transform: scale(200px);
-    transition: 1.5s;
-    width: 100px;
-    
-    
-}
-.fa-laptop-code:hover, ::after {
+.fa-laptop-code:hover::after{
     content: "Check out my blog";
-    transform: scale(200px);
-    transition: 1.5s;
-    width: 100px;
-    
 }
-
-.fa-linkedin-in:hover{
+.fa-twitter:hover::after{
+    content: "Follow me on Twitter";
+}
+.fa-linkedin-in:hover::after{
     content: "Connect on Linkedin";
-    transform: scale(200px);
-    transition: 1.5s;
-    width: 100px;
-    
 }
-.fa-facebook-f:hover {
+.fa-facebook-f:hover::after{
     content: "Like my Facebook page";
-    transform: scale(200px);
-    transition: 1.5s;
-    width: 100px;
-    
 }
-.fa-github:hover {
+.fa-github:hover::after{
     content: "See projects on Github";
-    transform: scale(200px);
-    transition: 1.5s;
-    width: 100px;
-    
-}
-i {
-    width: 25px;
-    height: 25px;
 }

@@ -1,18 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 body {
-  box-sizing: border-box;
+  display: grid;
   background: #c3cfe2;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
 
 .container {
-  display: inline-table;
   position: relative;
-  width: 25%;
+  width: 100%;
 }
 
 .image {
   opacity: 1;
-  display: block;
   width: 100%;
+  height: auto;
   transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -39,18 +42,23 @@ body {
 
 .text {
   background-color: #fff;
-  color: rgb(5, 5, 5);
+  color: black;
   font-size: 16px;
   padding: 16px 32px;
 }
 
-@media only screen and (max-width: 1024px) {
-  body {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media only screen and (max-width: 400px) {
+@media (min-width: 400px) {
   body {
     grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=portfoliogrid.css.map */

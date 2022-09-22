@@ -1,0 +1,14 @@
+@mixin padding {
+    padding-left: 15px;
+    padding-top: 15px;
+    
+}
+
+@mixin hover {
+    position: relative;
+    top: 0px;
+    left: 0px;    
+    transition: all 0.5s ease-in-out;
+    width: 200px;
+    cursor: pointer;
+}

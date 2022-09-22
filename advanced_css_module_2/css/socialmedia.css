@@ -1,33 +1,91 @@
 body {
-  box-sizing: border-box;
-  background: #c3cfe2;
+  background-color: #c3cfe2;
 }
 
 .socialmedia {
-  box-sizing: border-box;
-  display: grid;
-  grid-gap: 3px;
-  justify-content: flex-end;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
 }
 
-.social-media.blog {
+i {
+  width: 30px;
+  height: 25px;
+}
+
+.fa-laptop-code {
   background-color: #e17b77;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
-.social-media.facebook {
-  background-color: #3b5998;
-}
-
-.social-media.twitter {
+.fa-twitter {
   background-color: #00aced;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
-.social-media.github {
-  background-color: #333;
-}
-
-.social-media.linkedin {
+.fa-linkedin-in {
   background-color: #007bb6;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.fa-facebook-f {
+  background-color: #3b5998;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.fa-github {
+  background-color: #333;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.fa-laptop-code:hover {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: all 0.5s ease-in-out;
+  width: 200px;
+  cursor: pointer;
+}
+
+.fa-twitter:hover {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: all 0.5s ease-in-out;
+  width: 200px;
+  cursor: pointer;
+}
+
+.fa-linkedin-in:hover {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: all 0.5s ease-in-out;
+  width: 200px;
+  cursor: pointer;
+}
+
+.fa-facebook-f:hover {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: all 0.5s ease-in-out;
+  width: 200px;
+  cursor: pointer;
+}
+
+.fa-github:hover {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: all 0.5s ease-in-out;
+  width: 200px;
+  cursor: pointer;
 }
 
 .fa-laptop-code::before {
@@ -48,4 +106,24 @@ body {
 
 .fa-github::before {
   content: "\f09b";
+}
+
+.fa-laptop-code:hover::after {
+  content: "Check out my blog";
+}
+
+.fa-twitter:hover::after {
+  content: "Follow me on Twitter";
+}
+
+.fa-linkedin-in:hover::after {
+  content: "Connect on Linkedin";
+}
+
+.fa-facebook-f:hover::after {
+  content: "Like my Facebook page";
+}
+
+.fa-github:hover::after {
+  content: "See projects on Github";
 }/*# sourceMappingURL=socialmedia.css.map */
